@@ -20,7 +20,7 @@ int main(void) {
         if(TCA0.SINGLE.INTFLAGS & TCA_SINGLE_OVF_bm){
            TCA0.SINGLE.INTFLAGS |= TCA_SINGLE_OVF_bm;
            counter ++;
-           if(counter >= 1000){
+           if(counter >= 1000){ // making one seconds delay
                counter = 0;
               PORTA_OUTTGL = PIN4_bm ;
         }
