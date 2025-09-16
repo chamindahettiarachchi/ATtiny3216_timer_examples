@@ -1,7 +1,7 @@
 
 #include <xc.h>
 int main(void) {
-    /* Replace with your application code */
+   
     uint16_t counter = 0;
    PORTA_DIRSET = PIN4_bm;
    
