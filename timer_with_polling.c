@@ -8,11 +8,11 @@ int main(void) {
    
    TCA0.SINGLE.CTRLB = TCA_SINGLE_WGMODE_NORMAL_gc;
    
-   TCA0.SINGLE.PER = 3333;//periode FOR ONE MILISECOND
+   TCA0.SINGLE.PER = 3333;                          //periode FOR ONE MILISECOND
    
-   TCA0.SINGLE.INTCTRL = TCA_SINGLE_OVF_bm; //interrupt SETTING
+   TCA0.SINGLE.INTCTRL = TCA_SINGLE_OVF_bm;        //interrupt SETTING
    
-   TCA0.SINGLE.CTRLA = TCA_SINGLE_ENABLE_bm;//start
+   TCA0.SINGLE.CTRLA = TCA_SINGLE_ENABLE_bm;        //start
     
     while (1) {
         
